@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MYCELL" id="gTV-IL-0wX" customClass="MyCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note.png" translatesAutoresizingMaskIntoConstraints="NO" id="U5z-QT-edl">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6e-QR-nfY">
+                        <rect key="frame" x="5" y="29" width="64" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delete.png" translatesAutoresizingMaskIntoConstraints="NO" id="hpI-Ky-hmQ">
+                        <rect key="frame" x="-8" y="2" width="24" height="21"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="D6e-QR-nfY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="29" id="3yJ-OQ-4Gl"/>
+                <constraint firstAttribute="trailing" secondItem="U5z-QT-edl" secondAttribute="trailing" id="A5j-3o-rLZ"/>
+                <constraint firstItem="U5z-QT-edl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="E1m-RW-jca"/>
+                <constraint firstAttribute="bottom" secondItem="hpI-Ky-hmQ" secondAttribute="bottom" constant="57" id="MMt-Kp-m1u"/>
+                <constraint firstAttribute="bottom" secondItem="U5z-QT-edl" secondAttribute="bottom" id="ORY-kt-zCl"/>
+                <constraint firstItem="hpI-Ky-hmQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="-8" id="SHV-9Q-S1F"/>
+                <constraint firstAttribute="bottom" secondItem="D6e-QR-nfY" secondAttribute="bottom" constant="30" id="c7j-AT-Zgq"/>
+                <constraint firstItem="D6e-QR-nfY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="gwW-q2-X5J"/>
+                <constraint firstAttribute="trailing" secondItem="D6e-QR-nfY" secondAttribute="trailing" constant="11" id="j4t-qA-frq"/>
+                <constraint firstItem="hpI-Ky-hmQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="l6Q-oh-fB3"/>
+                <constraint firstAttribute="trailing" secondItem="hpI-Ky-hmQ" secondAttribute="trailing" constant="64" id="mzW-R8-XWM"/>
+                <constraint firstItem="D6e-QR-nfY" firstAttribute="top" secondItem="hpI-Ky-hmQ" secondAttribute="bottom" constant="-7" id="p22-0M-QtN"/>
+                <constraint firstItem="U5z-QT-edl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tgT-4O-tfu"/>
+            </constraints>
+            <size key="customSize" width="177" height="128"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="p22-0M-QtN"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="deleteImageView" destination="hpI-Ky-hmQ" id="d7M-QP-ZH2"/>
+                <outlet property="imageView" destination="U5z-QT-edl" id="5wt-Kw-XuH"/>
+                <outlet property="label" destination="D6e-QR-nfY" id="lrx-YQ-cFn"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="95"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="delete.png" width="26" height="24"/>
+        <image name="note.png" width="289" height="315"/>
+    </resources>
+</document>
